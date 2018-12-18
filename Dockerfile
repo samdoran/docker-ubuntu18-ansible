@@ -1,14 +1,17 @@
 FROM ubuntu:18.04
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         bash \
-        sudo \
         ca-certificates \
+        iproute2 \
         software-properties-common \
+        sudo \
         systemd systemd-cron sudo curl \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
+
 RUN apt-add-repository ppa:ansible/ansible \
     && apt-get update \
     && apt-get upgrade -y --no-install-recommends \
