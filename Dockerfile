@@ -5,6 +5,7 @@ RUN apt-get update \
         bash \
         ca-certificates \
         iproute2 \
+        python-pip \
         software-properties-common \
         sudo \
         systemd systemd-cron sudo curl \
