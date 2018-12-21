@@ -8,6 +8,7 @@ RUN apt-get update \
         bash \
         ca-certificates \
         iproute2 \
+        libcap2-bin \
         python-pip \
         software-properties-common \
         sudo \
