@@ -6,10 +6,12 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
+        aptitude \
         bash \
         ca-certificates \
         iproute2 \
         libcap2-bin \
+        python-apt \
         python-pip \
         software-properties-common \
         sudo \
