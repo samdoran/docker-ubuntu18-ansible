@@ -11,8 +11,8 @@ RUN apt-get update \
         ca-certificates \
         iproute2 \
         libcap2-bin \
-        python-apt \
-        python-pip \
+        python3-apt \
+        python3-pip \
         software-properties-common \
         sudo \
         systemd systemd-cron sudo curl \
