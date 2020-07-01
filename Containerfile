@@ -10,10 +10,15 @@ RUN apt-get update \
         bash \
         ca-certificates \
         curl \
+        gcc \
         iproute2 \
         libcap2-bin \
+        libyaml-dev \
         python3-apt \
+        python3-dev \
         python3-pip \
+        python3-setuptools \
+        python3-wheel \
         software-properties-common \
         sudo \
         systemd \
