@@ -10,6 +10,7 @@ RUN apt-get update \
         bash \
         ca-certificates \
         curl \
+        dbus \
         gcc \
         iproute2 \
         libcap2-bin \
