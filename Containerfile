@@ -11,7 +11,9 @@ RUN apt-get update \
         ca-certificates \
         curl \
         dbus \
+        dirmngr \
         gcc \
+        gpg-agent \
         iproute2 \
         libcap2-bin \
         libyaml-dev \
