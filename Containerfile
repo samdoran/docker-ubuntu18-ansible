@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM quay.io/bedrock/ubuntu:18.04
 ENV container=docker
 
 ENV CONTAINER=docker
@@ -30,7 +30,7 @@ RUN apt-get update \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
 
-RUN pip3 install ansible q
+RUN pip3 install ansible-core q
 
 RUN mkdir -p /etc/ansible \
     && echo '[local]\nlocalhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3' > /etc/ansible/hosts
