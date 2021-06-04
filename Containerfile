@@ -30,7 +30,8 @@ RUN apt-get update \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
 
-RUN pip3 install ansible-core q
+RUN pip3 install -U pip \
+    && pip3 install ansible-core q
 
 RUN mkdir -p /etc/ansible \
     && echo '[local]\nlocalhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3' > /etc/ansible/hosts
